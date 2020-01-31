@@ -31,12 +31,12 @@ function win(flynnChoice, cluChoice) {
 }
 
 function lose(flynnChoice, cluChoice) {
-  flynnScore++;
-  flynnScore_span.innerHTML = flynnScore;
+  cluScore++;
+  //flynnScore_span.innerHTML = flynnScore;
   cluScore_span.innerHTML = cluScore;
   const smallFlynnWord = "flynn".fontsize(3).sub();
   const smallCluWord = "clu".fontsize(3).sub();
-  result_p.innerHTML = `${convertToWord(flynnChoice)}${smallFlynnWord} beats ${convertToWord(cluChoice)}${smallCluWord}. You win!!!!!`;
+  result_p.innerHTML = `${convertToWord(cluChoice)}${smallCluWord} beats ${convertToWord(flynnChoice)}${smallFlynnWord}. You win!!!!!`;
  }
 
  function draw(flynnchoice, cluChoice) {
@@ -61,7 +61,7 @@ function game(flynnChoice) {
       case "rr":
       case "pp":
       case "ss":
-         draw(flynnChocie, cluChoice);
+         draw(flynnChoice, cluChoice);
           break;
 
   }
