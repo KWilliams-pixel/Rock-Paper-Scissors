@@ -47,6 +47,7 @@ function lose(flynnChoice, cluChoice) {
 
 function game(flynnChoice) {
   const cluChoice = getCluChoice();
+    console.log("cluChoice " + cluChoice)
   switch (flynnChoice + cluChoice) {
       case "rs":
       case "pr":
